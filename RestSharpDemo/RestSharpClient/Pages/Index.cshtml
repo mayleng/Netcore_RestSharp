@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<p>RestSharp是一个轻量的，不依赖任何第三方的组件或者类库的Http的组件。</p>
+<p>
+    在.net中，using System.Net包可以使用HttpWebRequest发起一个HTTP请求,
+    这是使用.net原生的方法。这里需要处理流，还得关闭它们。而RestSharp封装好了这些东东，
+    简洁易用，还能自主反序列化请求结果。
+
+</p>
+<p>RestSharp就是一个第三方可以替代自带的HttpWebRequest库。</p>
+<div>RestSharp 106.5.4
+    使用RestSharp发送http请求，GET请求网站http://192.168.0.198:8066/AbstractMethod.aspx</div>
+<br/>
+<br/>
+<div>@Model.PagesCont</div>
+<hr/>
+<a href="/PostPage">post请求</a>   
+<br/>
+<a href="">异步get请求</a> 

@@ -1,0 +1,15 @@
+﻿@page
+@model RestSharpClient.Pages.PostPageModel
+@{
+    ViewData["Title"] = "PostPage";
+}
+
+<h2>PostPage</h2>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<p>请求该页面即向localhost:9005/home/test页面发送请求。</p>
+<p>@Model.PagesCont</p>
+<hr/>
+<p>后面有时间完善post请求netcore的页面，及异步的请求。</p>
